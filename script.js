@@ -11,8 +11,9 @@ function reset() {
   sum = "";
   document.getElementById("output").innerHTML = sum;
 }
+// function toggle(nav) =queryselector navbar .classlist . toggle(active)
 
-let menu_btn = document.querySelector("#menu-btn")
+let menu_btn = document.getElementById("#menu-btn")
         let sidebar = document.getElementById("sidebar")
         let container = document.getElementById("my_container")
 
@@ -20,4 +21,4 @@ let menu_btn = document.querySelector("#menu-btn")
             sidebar.classList.toggle("active-nav")
             container.classList.toggle("active-cont")
         })
-       
+ 
