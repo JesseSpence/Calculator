@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="./calculator.css" />
+    <script src="https://kit.fontawesome.com/f84eacdb8e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar" id="sidebar">
+      <a href="#">
+          <div>JESSE</div>
+      </a>
+      <ul>
+          <li class="nav-item ">
+              <a href="#home"  class="nav-link"><i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li class="nav-item ">
+              <a href="#about" class="nav-link"><i class="fa-solid fa-user"></i>About</a>
+          </li>
+          <li class="nav-item ">
+              <a href="#resume" class="nav-link"><i class="fa-solid fa-hammer"></i>Resume</a>
+          </li>
+          <li class="nav-item">
+              <a href="#skills" class="nav-link"><i class="fa-images"></i>Skills</a>
+          </li>
+          <li class="nav-item">
+              <a href="#testimonials" class="nav-link"><i class="fa-solid fa-comments"></i>Testimonials</a>
+          </li>
+          <li class="nav-item py-1 w-100">
+              <a href="#projects" class="nav-link"><i class="fa-solid fa-hands-clapping"></i>Blog</a>
+      
+          </li>
+          <li class="nav-item">
+              <a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i>Contact Me</a>
+          </li>
+      </ul>
+      
+          <h5><span>☚</span>Jesse Spence<span>☛</span></h5>
+          <p>copyright Design by</p> <p>© Joshua Davids</p>
+              
+      </nav>
+      <section class="my-container" id="my_container">
+        <button class="btn" id="menu-btn">+</button>
+
+
+    <div class="calculator">
+      <div id="output"></div>
+      <div class="button-container">
+        <button class="item" onClick="reset()">AC</button>
+        <button class="item" onclick="buildSum('')">+/-</button>
+        <button class="item" onclick="buildSum('')">%</button>
+        <button class="item" onclick="buildSum('/')">/</button>
+        <button class="item" onclick="buildSum('1')">1</button>
+        <button class="item" onclick="buildSum('2')">2</button>
+        <button class="item" onclick="buildSum('3')">3</button>
+        <button class="item" onclick="buildSum('*')">x</button>
+        <button class="item" onclick="buildSum('4')">4</button>
+        <button class="item" onclick="buildSum('5')">5</button>
+        <button class="item" onclick="buildSum('6')">6</button>
+        <button class="item" onclick="buildSum('-')">-</button>
+        <button class="item" onclick="buildSum('7')">7</button>
+        <button class="item" onclick="buildSum('8')">8</button>
+        <button class="item" onclick="buildSum('9')">9</button>
+        <button class="item" onclick="buildSum('+')">+</button>
+        <button class="item" onclick="buildSum('0')" id="zero">0</button>
+        <button class="item" onclick="buildSum('.')">,</button>
+        <button class="item" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    </section>
+  </body>
+</html>

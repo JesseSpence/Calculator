@@ -1,34 +1,117 @@
-.calculator{
-    height: 320px;
-    background: rgb(60, 54, 54);
-    width: 260px;
-    margin: auto;
-    border: 3px solid;
-    margin: auto;
-}
-
-#output{
-    width: 100%;
-  background-color: rgb(6, 23, 7);
-  height: 50px;
-  font-size: 48px;
+#output {
+    display: block;
+    background-color: rgba(15, 54, 10, 0.568);
+    height: 100px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    border: 5px solid rgb(28, 28, 28);
+    border-radius: 3%;
+    margin: 6px;
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+  }
+  .calculator {
+    border: 6px solid rgb(69, 5, 5);
+    background-color: rgba(255, 255, 255, 0.404);
+    border-radius: 3%;
+    max-width: 450px;
+    margin-inline: auto;
+    box-shadow: #8F2D6B;
+  }
+  .button-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .item {
+    aspect-ratio: 1;
+    width: 100px;
+    height: 100px;
+    background-color: #463c3c;
+    border-radius: 20%;
+    border: 4px solid rgb(153, 135, 132);
+    color: white;
+    margin: 4px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .item:hover {
+    background-color: #8f2d2d;
+  }
+  #zero {
+    width: 43%;
+    border-radius: 50px;
+  }
 
+  .navbar{
+    width:250px;
+    height: 100vh;
+    position:fixed;
+    background-color: var(--nav-color);
+    transition: 0.5s;
+}
+#sidebar ul li a{
+    transition:0.5s;
+    font-weight: 500;
 }
 
-.buttons-container{
-        display:flex;
-        flex-wrap: wrap;
-        border-radius: 5px;
-        justify-content: center;
+#sidebar ul li a:hover{
+    margin-left: 3%;
+    color: var(--highlight-color)!important;
+
+}
+#sidebar ul li a:focus{
+    margin-left: 3%;
+    color: var(--highlight-color)!important;
+}
+
+#sidebar li a:active{
+    margin-left: 3%;
+    color: var(--highlight-color)!important;
+}
+
+
+
+.my-container{
+    overflow: hidden;
+    margin-left: 250px;
+   
+}
+#menu-btn{
+    display: none;
+}
+
+
+
+@media (max-width: 1199px){
+    .navbar{
+        width:250px;
+        height: 100vh;
+        position:fixed;
+        margin-left: -300px;
+        background-color: var(--nav-color);
+        transition: 0.5s;
     }
-
-button{
+    .my-container{
+        margin: 0%;
+        transition: 0.4s;
+    }
     
-        border-radius: 60px;
-        width: 60px;
-        height: 50px;
-        margin: 2px;
-}       
-
+    .active-nav{
+        margin-left: 0%;
+    }
+    
+    .active-cont{
+        margin-left: 250px;
+    }
+    #menu-btn{
+        display:inline;
+        position: fixed;
+        background-color: lightgray;
+    }
+    #menu-btn:focus{
+        box-shadow: 0 0 0 0.25rem gray;
+    }
+}
